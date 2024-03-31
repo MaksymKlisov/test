@@ -1,0 +1,32 @@
+.Button {
+  width: 100px;
+  height: 34px;
+  border-radius: 80px;
+  border: none;
+  color: black;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  background-color: #F4E041;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: yellow;
+  }
+
+  &:active {
+    background-color: gray;
+  }
+
+}
+
+
+.disabled {
+  background-color: #B4B4B4;
+  color: rgba(255, 255, 255, 0.87);
+
+
+  &:hover {
+    background-color: #B4B4B4;
+    color: rgba(255, 255, 255, 0.87);
+  }
+}

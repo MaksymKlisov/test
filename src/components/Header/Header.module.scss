@@ -1,0 +1,97 @@
+
+.Header {
+  display: flex;
+  height: 60px;
+  background-color: white;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+
+
+
+  .ContainerHeader{
+   display: flex;
+    justify-content: space-between;
+    padding: 0 5.1%;
+  }
+
+
+  .ButtonHeader{
+    display: flex;
+    gap: 10px;
+  }
+
+
+  .Logo {
+    padding-right: 5px;
+  }
+}
+
+
+.imageBg {
+  //display: block;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url('../../assets/bg.jpeg');
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  object-fit: cover;
+  height: 650px;
+  max-height: 100%;
+
+
+
+  @media (max-width: 1024px ) {
+    transition: 0.5s;
+    height: 500px;
+    object-fit: contain;
+  }
+
+}
+
+  .containerBg {
+    width: 380px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .headerBg {
+    color: #FFF;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    padding-bottom: 21px;
+
+    @media (max-width: 430px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+  }
+
+  .buttonBg {
+
+  }
+
+
+  .paragraphBg {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    padding-bottom: 32px;
+
+    @media (max-width: 430px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+  }
+
+
+
+

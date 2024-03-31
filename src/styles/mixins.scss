@@ -1,0 +1,21 @@
+
+
+@mixin commonStyles {
+}
+
+@mixin mobileStyles {
+  @media (max-width: 768px) {
+
+  }
+}
+
+@mixin tabletStyles {
+  @media (min-width: 769px) and (max-width: 1200px) {
+    margin: 0 5.1%;
+  }
+}
+
+@mixin desktopStyles {
+  @media (min-width: 1201px) {
+  }
+}
