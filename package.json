@@ -1,9 +1,9 @@
 {
+  "homepage": "https://vandamme1992.github.io/test/",
   "name": "vite-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/vandamme1992/test",
   "scripts": {
     "deploy": "gh-pages -d dist",
     "dev": "vite",

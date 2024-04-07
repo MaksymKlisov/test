@@ -263,13 +263,13 @@ const RegisterForm = () => {
                 </CustomButton>
 
 
-                {!registrationSuccess && <Box sx={{ alignItems: 'center', textAlign: 'center', marginLeft: -7}}>
+                {registrationSuccess && <Box sx={{ alignItems: 'center', textAlign: 'center', marginLeft: -7}}>
                     <h3 className={style.RegisterFormHeader}>User successfully registered</h3>
                     <img  src={successfulRegistration} alt={"registration Success"}/>
                 </Box>
                 }
 
-                <div ref={ref} className={style.spacer}></div>
+                <div  className={style.spacer}></div>
 
                 {isLoading &&  <CircularProgress
                     sx={{
@@ -281,7 +281,7 @@ const RegisterForm = () => {
                     }}
                     size={100} />}
 
-                <div  className={style.spacer}>test footer</div>
+                <div ref={ref} className={style.spacer}>test footer</div>
 
             </form>
         </div>
