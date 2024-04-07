@@ -37,7 +37,7 @@ const Header = () => {
         );
     }
 
-    const scrollToElement = (element:  HTMLElement ) => {
+    const scrollToElement = (element:  HTMLElement  ) => {
         element.scrollIntoView({
             behavior: 'smooth'
         })
@@ -50,13 +50,13 @@ const Header = () => {
                     <img className={style.Logo} src={Logo} alt="Logo"/>
                     <div className={style.ButtonHeader}>
                         <CustomButton
-                            onClick={()=>scrollToElement(elementCardDom)}
+                            onClick={()=>scrollToElement(elementCardDom as HTMLElement)}
                         >
                             Users
                         </CustomButton>
 
                         <CustomButton
-                            onClick={()=>scrollToElement(elementRegisterDom)}
+                            onClick={()=>scrollToElement(elementRegisterDom as HTMLElement)}
                         >
                             Sing up
                         </CustomButton>
@@ -74,7 +74,7 @@ const Header = () => {
                         They should also be excited to learn, as the world of Front-End Development keeps evolving.
                     </p>
                     <CustomButton
-                        onClick={()=>scrollToElement(elementRegisterDom)}
+                        onClick={()=>scrollToElement(elementRegisterDom as HTMLElement)}
                         className={style.buttonBg}>
                         Sign up
                     </CustomButton>
