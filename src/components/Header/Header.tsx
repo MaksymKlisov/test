@@ -13,10 +13,10 @@ const Header = () => {
 
 
     useEffect(  () => {
-       const timerId = setTimeout(() => {
+        const timerId = setTimeout(() => {
             const elementCard = document.getElementById('cardId') as HTMLElement ;
             const elementRegisterForm = document.getElementById('registerFormId') as HTMLElement;
-                setElementCardDom(elementCard);
+            setElementCardDom(elementCard);
             setElementRegisterDom(elementRegisterForm)
         }, 300);
 

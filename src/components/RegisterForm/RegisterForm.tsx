@@ -49,9 +49,9 @@ const RegisterForm = () => {
     }, [watchedFields,errors, isFormValid]);
 
     const scrollToElement = () => {
-            ref.current?.scrollIntoView({
-                behavior: 'smooth'
-            });
+        ref.current?.scrollIntoView({
+            behavior: 'smooth'
+        });
 
     };
 
@@ -82,7 +82,7 @@ const RegisterForm = () => {
         }
     };
 
-     const  getToken = async ():Promise<string>  => {
+    const  getToken = async ():Promise<string>  => {
 
         try {
             const response = await axios.get("https://frontend-test-assignment-api.abz.agency/api/v1/token");
@@ -197,20 +197,20 @@ const RegisterForm = () => {
                                         control={<Radio/>}
                                         label="Security"/>
 
-                                        <FormControlLabel
-                                            value="2"
-                                            control={<Radio/>}
-                                            label="Designer"/>
+                                    <FormControlLabel
+                                        value="2"
+                                        control={<Radio/>}
+                                        label="Designer"/>
 
-                                        <FormControlLabel
-                                            value="3"
-                                            control={<Radio/>}
-                                            label="Content manager"/>
+                                    <FormControlLabel
+                                        value="3"
+                                        control={<Radio/>}
+                                        label="Content manager"/>
 
-                                        <FormControlLabel
-                                            value="4"
-                                            control={<Radio/>}
-                                            label="Lawyer"/>
+                                    <FormControlLabel
+                                        value="4"
+                                        control={<Radio/>}
+                                        label="Lawyer"/>
                                 </RadioGroup>
                             )
                             }
@@ -250,7 +250,7 @@ const RegisterForm = () => {
 
                 <div
                     className={style.UploadButtonWrapper}>
-                {!file && !isFormValid && <span className={style.ErrorInputColor}>please upload photo</span>  }
+                    {!file && !isFormValid && <span className={style.ErrorInputColor}>please upload photo</span>  }
                 </div>
                 <CustomButton
                     type={'submit'}
